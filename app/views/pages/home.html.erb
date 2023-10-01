@@ -1,0 +1,11 @@
+<%= turbo_stream_from "audio-stream" %>
+<%= render "audio/form" %>
+<br />
+<h2>Previous Responses</h2>
+<div id="audio-container">
+  <% @audios.each do |audio| %>
+    <%= render partial: "audio/audio_container", locals: { 
+      audio: audio, 
+      autoplay: false } %>
+  <% end %>
+</div>

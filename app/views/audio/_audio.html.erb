@@ -1,0 +1,4 @@
+<%= audio_tag(
+  url_for(audio.file), 
+  controls: true, 
+  autoplay: autoplay) if audio.file.attached? %>

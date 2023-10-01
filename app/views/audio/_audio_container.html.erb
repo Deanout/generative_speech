@@ -1,0 +1,5 @@
+<div class="audio-container border m-5 p-5">
+  <h3>Response #<%= audio.id %></h3>
+  <p><%= audio.prompt %></p>
+  <%= render partial: "audio/audio", locals: { audio: audio, autoplay: autoplay } %>
+</div>
